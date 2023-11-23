@@ -1,9 +1,16 @@
+body {
+  background-color: #051923;
+}
 .todoSection {
   width: 85%;
   margin: auto;
 }
 .todoSection > h1 {
   text-align: center;
+  color: #00a6fb;
+}
+h2 {
+  color: white;
 }
 .todoInput {
   display: flex;
@@ -15,10 +22,28 @@
   width: 50%;
   padding: 8px;
   border-radius: 5px 0 0 5px;
+  background-color: #003554;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  color: white;
 }
+
+/* .todoInput > input::placeholder {
+  color: white;
+  font-weight: 600;
+} */
 .todoInput > button {
   padding: 8px;
   border-radius: 0 5px 5px 0;
+  background-color: #0582ca;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+.todoInput > button:hover {
+  background-color: #003554;
 }
 
 .todoBox {
@@ -46,12 +71,116 @@
 
 .left > div > button {
   width: 100%;
+  padding: 6px;
+  background-color: #0582ca;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+.left > div > button:hover {
+  background-color: #003554;
 }
 
 .completed {
   color: green;
+  cursor: pointer;
 }
 
 .not-completed {
   color: red;
+  cursor: pointer;
+}
+
+.todoFilter {
+  display: flex;
+  justify-content: flex-end;
+  margin: 22px 0;
+}
+
+.todoFilter > button {
+  width: 11.8%;
+  padding: 6px;
+  background-color: #0582ca;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+.todoFilter > button:hover {
+  background-color: #003554;
+}
+
+.vl {
+  width: 100%;
+  height: 2px;
+  background-color: #003554;
+  margin: 50px 0 25px 0;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100vh;
+}
+
+/* Media Queries */
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .todoBox {
+    gap: 10px;
+  }
+  .right {
+    width: 50%;
+  }
+  .left {
+    gap: 10px;
+    width: 50%;
+  }
+  .not-completed {
+    font-size: 12px;
+  }
+  .completed {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .todoInput > input {
+    width: 74%;
+  }
+  .todoInput {
+    margin: 50px 0;
+  }
+  .todoFilter > button {
+    width: 48.8%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .todoInput > input {
+    width: 85%;
+  }
+  .todoInput {
+    margin: 50px 0;
+  }
+  .todoFilter > button {
+    width: 22.8%;
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  .todoFilter > button {
+    width: 13.8%;
+  }
+  .left {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 1440px) {
 }
