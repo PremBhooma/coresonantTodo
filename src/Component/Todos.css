@@ -1,0 +1,57 @@
+.todoSection {
+  width: 85%;
+  margin: auto;
+}
+.todoSection > h1 {
+  text-align: center;
+}
+.todoInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px;
+}
+.todoInput > input {
+  width: 50%;
+  padding: 8px;
+  border-radius: 5px 0 0 5px;
+}
+.todoInput > button {
+  padding: 8px;
+  border-radius: 0 5px 5px 0;
+}
+
+.todoBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.right {
+  width: 60%;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 40%;
+}
+
+.left > div {
+  width: 33.3%;
+}
+
+.left > div > button {
+  width: 100%;
+}
+
+.completed {
+  color: green;
+}
+
+.not-completed {
+  color: red;
+}
